@@ -1,5 +1,6 @@
 # MyPersonalData
-imie = "Kamil";
-nazwisko = "Szczotka";
-wiek = "20";
+imie = "Kamil"
+nazwisko = "Szczotka"
+cos = "asda"
+wiek = "20"
 print (imie+ " "+ nazwisko+" " +wiek) 
