@@ -1,18 +1,31 @@
 import turtle
+pomocnicza = 0
+zejscieWDol = 0
 def drawSquare(x,y,n):
+    # n= dlugosc boku kwadratu
+    #lewy gorny naroznik wspolrzedne (x,y)
+    global tmp
+    tmp=n
+    zolw = turtle.Turtle()
+    zolw.penup()                 
+    zolw.setposition(x,y)
+    zolw.pendown()
+    zolw.forward(n)
+    zolw.setheading(270)
+    zolw.forward(n)
+    zolw.setheading(180)
+    zolw.forward(n)
+    zolw.setheading(90)
+    zolw.forward(n)
+    zolw.setheading(0)
     
-    pen = turtle.Turtle()
     
-    for y in range (3):
-        for x in range(4):
-            pen.forward(n)
-            pen.right(90)
-            # Rotate clockwise by 90 degrees
-        pen.forward(n)
-    pen.right(180)
-    pen.forward(n*3)
-    pen.right(90)
-    pen.forward(n)
     
-    turtle.done()
-drawSquare(100.0,1.0,34)
+for y in range(4):
+    for x in range(4):
+        drawSquare(-500+pomocnicza,500-zejscieWDol,100)
+        pomocnicza+=tmp
+    zejscieWDol+=tmp
+    pomocnicza=0
+            
+    
