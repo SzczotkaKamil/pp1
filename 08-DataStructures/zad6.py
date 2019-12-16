@@ -23,9 +23,6 @@ class matrix():
         for row in matrix:
             print(row)
 
-m = matrix.create(3,5)
-matrix.print(m)
-print()
+
 n = matrix.create_unit(5)
 matrix.print(n)
-

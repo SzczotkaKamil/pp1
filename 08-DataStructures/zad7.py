@@ -1,3 +1,4 @@
+import random
 class matrix():
 
     @staticmethod
@@ -22,10 +23,19 @@ class matrix():
     def print(matrix):
         for row in matrix:
             print(row)
+    def fill_random(matrix,m,n):
 
-m = matrix.create(3,5)
-matrix.print(m)
-print()
-n = matrix.create_unit(5)
+        for x in range(len(matrix)):
+            for y in range(len(matrix[x])):
+                wartosc = random.randrange(m,n)
+                matrix[x][y]=wartosc
+        return matrix
+
+
+matr = matrix.create(3,5)
+n = matrix.fill_random(matr,5,9)
 matrix.print(n)
+
+
+
 
